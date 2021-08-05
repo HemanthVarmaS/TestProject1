@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestProject1</string>
+    <string name="tv_layout1">Hemanth</string>
+    <string name="iv_layout1_desc">Identifying image of user</string>
+    <string name="btn_layout1">Button</string>
+    <string name="layout2_linear_layout1_iv_profile_pic_desc">Identifying image of user</string>
+    <string name="layout2_tv1_signin">Sign in</string>
+    <string name="text_username">Username</string>
+    <string name="text_password">Password</string>
+    <string name="text_remember_me">Remember me</string>
+    <string name="end_icon_content_desc_username">Type your Username here</string>
+    <string name="end_icon_content_desc_password">Type your Password here</string>
+    <string name="layout2_cl1_btn1_sign_in">Sign in</string>
+    <string name="main_btn1_to_layout2">Layout2</string>
+    <string name="btn_view_employee_list">View Employee List</string>
+</resources>

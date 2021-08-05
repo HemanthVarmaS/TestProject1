@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:id="@+id/layout2_linear_layout_1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/profile_pic_image"
+            android:contentDescription="@string/layout2_linear_layout1_iv_profile_pic_desc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout2_tv1_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/layout2_linear_layout_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        android:paddingHorizontal="20dp"
+        android:layout_marginVertical="25dp"
+        android:textSize="50sp"
+        android:text="@string/layout2_tv1_signin"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/layout2_tv1_signin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/username_side_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/text_username"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#616161" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--app:endIconMode="custom"
+        app:endIconCheckable="true"
+        app:endIconDrawable="@android:drawable/ic_menu_help"
+        app:endIconContentDescription="@string/end_icon_content_desc_username"-->
+        <!--app:endIconMode="custom"
+        app:endIconDrawable="@android:drawable/ic_menu_help"
+        app:endIconContentDescription="@string/end_icon_content_desc_password"-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_username"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/tertiary_text_dark"
+            app:startIconDrawable="@drawable/password_side_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/text_password"
+                android:inputType="textPassword"
+                android:textColorHint="#616161"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_remember_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_remember_me"
+            app:layout_constraintTop_toBottomOf="@id/til_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <!--<CheckedTextView
+            android:id="@+id/layout2_cl1_ctv1_remember_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="@android:drawable/checkbox_off_background"
+
+            android:text="@string/text_remember_me"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_password" />-->
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/layout2_cl1_btn1_sign_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_remember_me"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
